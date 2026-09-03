@@ -1,0 +1,2221 @@
+/* =====================================================
+   SHELFSAFE
+   SMART FOOD PRESERVATION & EXTENDED SHELF LIFE
+   PROFESSIONAL WEBSITE DESIGN
+   ===================================================== */
+
+
+/* =====================================================
+   GLOBAL SETTINGS
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f6f8f7;
+
+    color: #1f2933;
+
+    line-height: 1.6;
+}
+
+
+img {
+    width: 100%;
+
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.navbar {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e5e7eb;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.nav-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.logo {
+    font-size: 23px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #176b45;
+
+    white-space: nowrap;
+}
+
+
+.logo span {
+    margin-right: 7px;
+}
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+nav a {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #4b5563;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #176b45;
+}
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+.hero {
+    max-width: 1200px;
+
+    margin: auto;
+
+    min-height: 650px;
+
+    padding: 80px 25px;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background: #e4f5ec;
+
+    color: #176b45;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+
+    color: #17251f;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    color: #218653;
+}
+
+
+.hero p {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    color: #667085;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn {
+    background: #176b45;
+
+    color: white;
+}
+
+
+.primary-btn:hover {
+    background: #105335;
+
+    transform: translateY(-2px);
+}
+
+
+.secondary-btn {
+    border: 1px solid #cbd5d1;
+
+    background: white;
+
+    color: #176b45;
+}
+
+
+.secondary-btn:hover {
+    background: #eef8f3;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO CARD
+   ===================================================== */
+
+.hero-card {
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    border: 1px solid #e3ebe7;
+
+    box-shadow: 0 20px 60px rgba(30, 70, 50, 0.10);
+
+    text-align: center;
+}
+
+
+.hero-card-icon {
+    width: 100px;
+
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eaf7f0;
+
+    font-size: 48px;
+}
+
+
+.hero-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+.hero-card p {
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+    color: #6b7280;
+}
+
+
+.hero-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #e5e7eb;
+
+    padding-top: 20px;
+
+    gap: 10px;
+}
+
+
+.hero-stats div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.hero-stats strong {
+    color: #176b45;
+
+    font-size: 20px;
+}
+
+
+.hero-stats span {
+    font-size: 11px;
+
+    color: #7b8490;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+   ===================================================== */
+
+.intro-section,
+.products-section,
+.technology-section,
+.advisor-section,
+.about-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+
+.section-heading > span,
+.about-content > span,
+.comparison-heading > span {
+    color: #218653;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.section-heading h2 {
+    margin-top: 10px;
+
+    font-size: 38px;
+
+    color: #17251f;
+}
+
+
+.section-heading p {
+    margin-top: 12px;
+
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   FEATURE CARDS
+   ===================================================== */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.feature-card {
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+    border-color: #b9ddc9;
+}
+
+
+.feature-icon {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+}
+
+
+.feature-card p {
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   PRODUCTS
+   ===================================================== */
+
+.products-section {
+    background: #f6f8f7;
+}
+
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.product-card {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+
+.product-image {
+    height: 230px;
+
+    overflow: hidden;
+
+    background: #e9eeeb;
+}
+
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.product-card:hover .product-image img {
+    transform: scale(1.06);
+}
+
+
+.product-content {
+    padding: 22px;
+}
+
+
+.food-tag {
+    display: inline-block;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    background: #e7f5ed;
+
+    color: #176b45;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+
+.product-content h3 {
+    margin: 12px 0 8px;
+
+    font-size: 22px;
+}
+
+
+.product-content p {
+    min-height: 48px;
+
+    font-size: 14px;
+
+    color: #6b7280;
+
+    margin-bottom: 18px;
+}
+
+
+.learn-more {
+    border: none;
+
+    background: none;
+
+    color: #176b45;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    transition: 0.3s;
+}
+
+
+.learn-more:hover {
+    color: #0d4d30;
+
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   FOOD DETAILS
+   ===================================================== */
+
+.food-details {
+    display: block;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-left: 5px solid #218653;
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.food-details h3 {
+    margin-bottom: 12px;
+
+    color: #176b45;
+}
+
+
+/* =====================================================
+   TECHNOLOGIES
+   ===================================================== */
+
+.technology-section {
+    background: #ffffff;
+}
+
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+.technology-card {
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background: #f8faf9;
+
+    border: 1px solid #e4ebe7;
+
+    transition: 0.3s;
+}
+
+
+.technology-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+.technology-icon {
+    font-size: 34px;
+
+    margin-bottom: 18px;
+}
+
+
+.technology-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+
+.technology-card p {
+    font-size: 14px;
+
+    color: #68737d;
+
+    margin-bottom: 18px;
+}
+
+
+.technology-level {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    color: #176b45;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   ADVISOR
+   ===================================================== */
+
+.advisor-section {
+    background: #f1f7f4;
+
+    max-width: none;
+
+    padding-left: max(25px, calc((100% - 1150px) / 2));
+
+    padding-right: max(25px, calc((100% - 1150px) / 2));
+}
+
+
+.advisor-layout {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+.advisor-panel,
+.recommendation-panel {
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #dfe9e4;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 35px rgba(25, 70, 45, 0.07);
+}
+
+
+.advisor-panel h3 {
+    font-size: 23px;
+
+    margin-bottom: 5px;
+}
+
+
+.panel-description {
+    color: #7a8580;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+
+.input-group label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+}
+
+
+.input-group input,
+.input-group select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d5ddd8;
+
+    border-radius: 9px;
+
+    background: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #218653;
+
+    box-shadow: 0 0 0 3px rgba(33, 134, 83, 0.10);
+}
+
+
+.analyze-button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #176b45;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.analyze-button:hover {
+    background: #105335;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   EMPTY RESULT
+   ===================================================== */
+
+.empty-result {
+    min-height: 450px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: #68737d;
+}
+
+
+.empty-icon {
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #edf7f1;
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+.empty-result h3 {
+    color: #26352d;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   RESULT CONTENT
+   ===================================================== */
+
+.recommendation-panel h3 {
+    color: #176b45;
+
+    margin-bottom: 15px;
+}
+
+
+.recommendation-panel h4 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.recommendation-panel p {
+    font-size: 14px;
+
+    color: #58645e;
+
+    margin: 10px 0;
+}
+
+
+.score-text {
+    font-weight: 800;
+
+    color: #26352d !important;
+}
+
+
+.freshness-container {
+    margin: 20px 0;
+}
+
+
+.freshness-bar,
+.chart-bar,
+.condition-score-bar {
+    width: 100%;
+
+    height: 12px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #e7ece9;
+}
+
+
+.freshness-fill,
+.base-shelf-fill,
+.estimated-shelf-fill,
+.condition-score-fill {
+    height: 100%;
+
+    border-radius: 20px;
+
+    transition: width 0.8s ease;
+}
+
+
+.freshness-fill {
+    background: #218653;
+}
+
+
+/* =====================================================
+   SHELF LIFE CHART
+   ===================================================== */
+
+.shelf-life-chart {
+    margin-top: 25px;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    background: #f8faf9;
+
+    border: 1px solid #e2e9e5;
+}
+
+
+.shelf-life-chart h4 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.chart-item {
+    margin-bottom: 18px;
+}
+
+
+.chart-label,
+.condition-score-label {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.base-shelf-fill {
+    width: 100%;
+
+    background: #aab5af;
+}
+
+
+.estimated-shelf-fill {
+    background: #218653;
+}
+
+
+/* =====================================================
+   CONDITION ANALYSIS
+   ===================================================== */
+
+.condition-analysis {
+    margin-top: 25px;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e4;
+}
+
+
+.condition-analysis h4 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.condition-score {
+    margin-top: 15px;
+}
+
+
+.temperature-score-fill {
+    background: #3b82f6;
+}
+
+
+.humidity-score-fill {
+    background: #06b6d4;
+}
+
+
+.storage-score-fill {
+    background: #8b5cf6;
+}
+
+
+/* =====================================================
+   TECHNOLOGY COMPARISON
+   ===================================================== */
+
+.comparison-panel {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #dfe9e4;
+
+    box-shadow: 0 10px 35px rgba(25, 70, 45, 0.06);
+}
+
+
+.comparison-heading {
+    margin-bottom: 25px;
+}
+
+
+.comparison-heading h3 {
+    font-size: 24px;
+
+    margin-top: 8px;
+}
+
+
+.comparison-heading p {
+    color: #68737d;
+
+    font-size: 14px;
+}
+
+
+.technology-table {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #dce4df;
+
+    border-radius: 12px;
+}
+
+
+.technology-row {
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr 2fr;
+
+    gap: 15px;
+
+    padding: 16px;
+
+    align-items: center;
+
+    border-bottom: 1px solid #e5e9e7;
+
+    font-size: 14px;
+}
+
+
+.technology-row:last-child {
+    border-bottom: none;
+}
+
+
+.technology-header {
+    background: #eef5f1;
+
+    color: #176b45;
+
+    font-weight: 800;
+}
+
+
+.technology-row:not(.technology-header):hover {
+    background: #fafcfb;
+}
+
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+
+.about-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.about-content h2 {
+    margin: 12px 0 20px;
+
+    font-size: 40px;
+
+    line-height: 1.15;
+}
+
+
+.about-content p {
+    color: #68737d;
+
+    margin-bottom: 15px;
+}
+
+
+.about-highlight {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.about-highlight div {
+    min-height: 140px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-radius: 15px;
+
+    background: #f0f6f3;
+
+    border: 1px solid #dce9e2;
+}
+
+
+.about-highlight strong {
+    font-size: 30px;
+
+    color: #218653;
+}
+
+
+.about-highlight span {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #374151;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background: #14231c;
+
+    color: white;
+
+    padding: 45px 25px 20px;
+}
+
+
+.footer-content {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.footer-content h3 {
+    color: #b9e5cc;
+
+    margin-bottom: 7px;
+}
+
+
+.footer-content p {
+    color: #aab8b0;
+
+    font-size: 14px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+
+.footer-links a {
+    color: #cbd5d0;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    max-width: 1150px;
+
+    margin: 35px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #304139;
+
+    text-align: center;
+
+    color: #8e9d95;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    nav {
+        gap: 12px;
+    }
+
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+
+    .hero-content {
+        margin: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-card {
+        max-width: 500px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .advisor-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .feature-grid,
+    .product-grid,
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-highlight {
+        grid-template-columns: 1fr;
+    }
+
+
+    .technology-row {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+
+    .technology-header {
+        display: none;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero {
+        padding-left: 18px;
+
+        padding-right: 18px;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .hero-card,
+    .advisor-panel,
+    .recommendation-panel,
+    .comparison-panel {
+        padding: 20px;
+    }
+
+}
+/* =====================================================
+   INTERACTIVE TECHNOLOGY DETAILS
+   ===================================================== */
+
+.technology-details {
+    margin-top: 25px;
+    display: none;
+}
+
+.technology-details:not(:empty) {
+    display: block;
+}
+
+.technology-row:not(.technology-header) {
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.technology-row:not(.technology-header):hover {
+    background: #eef8f3;
+    transform: translateX(3px);
+}
+
+.technology-row:not(.technology-header):focus {
+    outline: 2px solid #218653;
+    outline-offset: -2px;
+}
+
+
+/* =====================================================
+   TECHNOLOGY DETAIL CARD
+   ===================================================== */
+
+.technology-detail-content {
+    padding: 30px;
+    background: #f8fbf9;
+    border: 1px solid #dce9e2;
+    border-left: 5px solid #218653;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(25, 70, 45, 0.08);
+    animation: technologyDetailAppear 0.35s ease;
+}
+
+@keyframes technologyDetailAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   DETAIL HEADER
+   ===================================================== */
+
+.technology-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.technology-detail-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 18px;
+
+    background: #e7f5ed;
+
+    font-size: 34px;
+}
+
+.technology-detail-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #218653;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.technology-detail-header h3 {
+    margin: 0 0 5px;
+
+    color: #17251f;
+
+    font-size: 26px;
+}
+
+.technology-detail-header p {
+    margin: 0;
+
+    color: #68737d;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   DETAIL GRID
+   ===================================================== */
+
+.technology-detail-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 20px;
+}
+
+.technology-detail-item {
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #e1e9e5;
+
+    border-radius: 13px;
+
+    transition: 0.25s ease;
+}
+
+.technology-detail-item:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.technology-detail-item strong {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #176b45;
+
+    font-size: 14px;
+}
+
+.technology-detail-item p {
+    margin: 0;
+
+    color: #68737d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   EXAMPLE BOX
+   ===================================================== */
+
+.technology-example {
+    padding: 18px 20px;
+
+    background: #eef7f2;
+
+    border-radius: 12px;
+
+    border: 1px solid #d6e8de;
+}
+
+.technology-example strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #176b45;
+
+    font-size: 14px;
+}
+
+.technology-example p {
+    margin: 0;
+
+    color: #4f5d56;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .technology-detail-content {
+        padding: 22px;
+    }
+
+    .technology-detail-header {
+        align-items: flex-start;
+    }
+
+    .technology-detail-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 27px;
+    }
+
+    .technology-detail-header h3 {
+        font-size: 22px;
+    }
+
+    .technology-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   TECHNOLOGY CLICK INDICATOR
+   ===================================================== */
+
+.technology-row:not(.technology-header) {
+    position: relative;
+}
+
+.technology-row:not(.technology-header)::after {
+    content: "Click to view details →";
+
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #218653;
+
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+.technology-row:not(.technology-header):hover::after {
+    opacity: 1;
+}
+
+.technology-row:not(.technology-header):hover {
+    padding-right: 180px;
+}
+/* =====================================================
+   PROFESSIONAL SMART ADVISOR DASHBOARD
+   ===================================================== */
+
+.result-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 24px 0;
+}
+
+.shelf-life-card,
+.freshness-card,
+.retention-card {
+    padding: 24px;
+    border: 1px solid #e4ebe7;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shelf-life-card span,
+.freshness-card span,
+.retention-card span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #66736d;
+    margin-bottom: 8px;
+}
+
+.shelf-life-card strong,
+.freshness-card strong,
+.retention-card strong {
+    font-size: 34px;
+    line-height: 1.1;
+    color: #176b43;
+}
+
+.shelf-life-card small {
+    margin-top: 4px;
+    color: #718078;
+    font-size: 13px;
+}
+
+.freshness-bar {
+    width: 100%;
+    height: 8px;
+    margin-top: 14px;
+    background: #edf2ef;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.freshness-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: #218653;
+    transition: width 0.5s ease;
+}
+
+@media (max-width: 800px) {
+    .result-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   SMART ADVISOR RISK INDICATORS
+   ===================================================== */
+
+.risk-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 16px;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+
+    background: #edf2ef;
+    color: #176b43;
+
+    transition: 0.3s ease;
+}
+
+/* LOW RISK */
+.risk-badge.low {
+    background: #e7f6ed;
+    color: #167044;
+    border: 1px solid #bfe6cf;
+}
+
+/* MEDIUM RISK */
+.risk-badge.medium {
+    background: #fff4df;
+    color: #a66a00;
+    border: 1px solid #f1d49a;
+}
+
+/* HIGH RISK */
+.risk-badge.high {
+    background: #fdeaea;
+    color: #b42318;
+    border: 1px solid #f2b8b3;
+}
+
+/* Risk status section */
+.result-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Small visual emphasis for the risk label */
+.result-label {
+    font-weight: 700;
+    color: #52615a;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+    .result-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .risk-badge {
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+}
+
+/* =====================================================
+   ADVANCED RECOMMENDATION ENGINE
+   ===================================================== */
+
+.advisor-recommendation {
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 18px;
+    border: 1px solid #dcebe2;
+    background: linear-gradient(135deg, #f4fbf7, #ffffff);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.advisor-recommendation h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #176b43;
+}
+
+.advisor-recommendation p {
+    margin: 0;
+    color: #53635b;
+    line-height: 1.7;
+}
+
+.recommended-technology {
+    margin-top: 16px;
+    padding: 16px 18px;
+    border-left: 5px solid #218653;
+    border-radius: 10px;
+    background: #ffffff;
+    font-weight: 700;
+    color: #176b43;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.analysis-note {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #f7f9f8;
+    color: #68756f;
+    font-size: 13px;
+    line-height: 1.6;
+}
+/* =====================================================
+   STEP 15A - MOBILE RESPONSIVE POLISH
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    /* General spacing */
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    /* Main headings */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Food cards */
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    /* Technology cards */
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Technology comparison table */
+    .technology-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 18px;
+    }
+
+    .technology-header {
+        display: none;
+    }
+
+    .technology-row:not(.technology-header)::after {
+        position: static;
+        transform: none;
+        display: block;
+        margin-top: 8px;
+        opacity: 1;
+    }
+
+    .technology-row:not(.technology-header):hover {
+        padding-right: 18px;
+    }
+
+    /* Smart Advisor */
+    .advisor-container {
+        width: 100%;
+    }
+
+    .advisor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Prediction cards */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .data-prediction-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Buttons */
+    button {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 25px 18px;
+    }
+}
+
+
+/* =====================================================
+   SHELFSAFE - STEP 15B
+   FINAL VISUAL POLISH
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   1. SMOOTH PAGE EXPERIENCE
+   ----------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+}
+
+
+/* -----------------------------------------------------
+   2. SECTION HEADING POLISH
+   ----------------------------------------------------- */
+
+section h2 {
+    letter-spacing: 0.3px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    margin-top: 8px;
+    border-radius: 5px;
+    background: #218653;
+}
+
+
+/* -----------------------------------------------------
+   3. FOOD CARD POLISH
+   ----------------------------------------------------- */
+
+.food-card {
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.food-card img {
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover img {
+    transform: scale(1.03);
+}
+
+
+/* -----------------------------------------------------
+   4. BUTTON POLISH
+   ----------------------------------------------------- */
+
+button,
+.advisor-button {
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                opacity 0.2s ease;
+}
+
+button:hover,
+.advisor-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+button:active,
+.advisor-button:active {
+    transform: translateY(0);
+}
+
+
+/* -----------------------------------------------------
+   5. TECHNOLOGY ROW POLISH
+   ----------------------------------------------------- */
+
+.technology-row:not(.technology-header) {
+    transition: background 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.technology-row:not(.technology-header):hover {
+    background: rgba(33, 134, 83, 0.04);
+    transform: translateX(3px);
+}
+
+
+/* -----------------------------------------------------
+   6. SMART ADVISOR INPUT POLISH
+   ----------------------------------------------------- */
+
+input,
+select {
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #218653;
+    box-shadow: 0 0 0 3px rgba(33, 134, 83, 0.12);
+}
+
+
+/* -----------------------------------------------------
+   7. PREDICTION CARD POLISH
+   ----------------------------------------------------- */
+
+.data-prediction-card,
+.prediction-comparison {
+    animation: fadeInUp 0.4s ease;
+}
+
+
+/* -----------------------------------------------------
+   8. SIMPLE RESULT ANIMATION
+   ----------------------------------------------------- */
+
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* -----------------------------------------------------
+   9. TECHNOLOGY DETAILS POLISH
+   ----------------------------------------------------- */
+
+.technology-details {
+    animation: fadeInUp 0.35s ease;
+}
+
+
+/* -----------------------------------------------------
+   10. CARD CONSISTENCY
+   ----------------------------------------------------- */
+
+.food-card,
+.technology-card,
+.data-prediction-card,
+.prediction-comparison {
+    border-radius: 12px;
+}
+
+
+/* -----------------------------------------------------
+   11. IMAGE CORNER POLISH
+   ----------------------------------------------------- */
+
+.food-card img {
+    border-radius: 10px;
+}
+
+
+/* -----------------------------------------------------
+   12. MOBILE POLISH
+   ----------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    section h2::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .food-card:hover {
+        transform: none;
+    }
+
+    .food-card:hover img {
+        transform: none;
+    }
+
+    .technology-row:not(.technology-header):hover {
+        transform: none;
+    }
+
+    button:hover,
+    .advisor-button:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =====================================================
+   END OF STEP 15B
+   ===================================================== */
